@@ -359,3 +359,20 @@ body.theme-body.devtools-monospace div#content div.mainFrame span div.split-box.
         color: var(--primary-font-color) !important;
     }
 }
+
+/*custom fullscreen warning*/
+#fullscreen-warning{
+    background-color: #282828 !important;
+    border-color: #83A598 !important;
+    max-width: 500px !important;
+    max-height: 75px !important;
+    border-radius: 50px !important;
+    font-size: 12px !important;
+}
+
+.pointerlockfswarning-generic-text,
+.pointerlockfswarning-domain-text{
+    font-size: 15px !important;
+    color: rgb(200,200,200) !important;
+    text-shadow: none !important;
+}
