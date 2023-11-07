@@ -1,0 +1,26 @@
+@-moz-document url(chrome://browser/content/browser.xhtml){
+  #customization-container{
+    margin-bottom: calc(20px + 2 * var(--bookmark-block-padding) );
+  }
+  #PersonalToolbar{
+    position: fixed !important;
+    bottom: 0px;
+    min-height: 40px !important;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    transform: rotateX(87deg);
+    transition: transform 130ms ease-in-out 1s, opacity 0ms linear 130ms !important;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  #personal-bookmarks{ flex-grow: 1; }
+  #navigator-toolbox:focus-within > #PersonalToolbar,
+  #PersonalToolbar[customizing],
+  #PersonalToolbar:hover{
+    left-margin: 100px !important;
+    transform: rotateX(0deg);
+    transition-delay: 100ms !important;
+    opacity: 1;
+  }
+}
