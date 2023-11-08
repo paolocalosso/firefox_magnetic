@@ -11,7 +11,7 @@
         --background: #1B1D1C;
         --icons: rgb(251,251,254);
         --tab-separator: transparent;
-        --tab-active-background: rgba(80, 80, 80);
+        --tab-active-background: rgb(131, 165, 152); /*rgba(80, 80, 80);*/
         --tab-active-text: rgb(251,251,254);
         --tab-text: #fbfbfe;
         --toolbar-background: rgb(43,42,51);
