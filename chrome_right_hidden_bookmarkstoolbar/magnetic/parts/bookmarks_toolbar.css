@@ -76,6 +76,7 @@ head > link[href="chrome://browser/skin/addons/unified-extensions-item.css"] {un
     max-height: 100vh !important; 
     padding-bottom: 120px !important;
     padding-inline: 0px !important;
+    background-color: #83A598 /*#E7E9CE*/!important;
   }
     
   #PersonalToolbar .toolbarbutton-1{
@@ -118,7 +119,7 @@ head > link[href="chrome://browser/skin/addons/unified-extensions-item.css"] {un
   transform: scaleX(0.2);
   transform-origin: right;
   opacity: 0;
-  width: 48px !important;
+  width: 180px !important;
   }
   #PersonalToolbar:hover{
   opacity: 1;
@@ -145,116 +146,16 @@ head > link[href="chrome://browser/skin/addons/unified-extensions-item.css"] {un
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
   }
+  
+  #personal-bookmarks .bookmark-item{
+    margin: 5px 10px 5px 12px !important;
+    min-height: 34px !important;
+    }
+  #personal-bookmarks .bookmark-item:hover{
+    background-color: #1B1C1D !important;
+    }
+  #personal-bookmarks .bookmark-item>.toolbarbutton-text, #import-button>.toolbarbutton-text {
+    margin-left: 5px !important;
+    /*display: none !important;*/
+  }   
 }
-    
-/* --------------------------------------- My Code to Adapt to -ONE- Style --------------------------- */
-    
-    :root {
-    --uc-vertical-toolbar-width: 48px !important;
-    --padding-right-tab: 0px !important;
-    }
-    
-    /* ---------------- Quitar label de items de la right-sidebar ---------------- */
-    
-    #personal-bookmarks .bookmark-item>.toolbarbutton-text, #import-button>.toolbarbutton-text {
-        display: none !important;
-    }    
-        /* Without bookmarks labels - quitamos margenes que desalinean los íconos */    
-        #personal-bookmarks .bookmark-item>.toolbarbutton-icon, #import-button>.toolbarbutton-icon{
-            margin: 0px !important;
-        }
-    
-        #personal-bookmarks .bookmark-item{
-            margin: 0px !important;
-        }
-    
-    /* margen izquierda pestañas*/
-    
-    :root:not([chromehidden~="toolbar"]) #toolbar-menubar, :root:not([chromehidden~="toolbar"]) #toolbar-menubar[autohide="true"]+#TabsToolbar {
-        padding-inline-start: calc(var(--padding-right-tab) + 0px) !important;
-    }
-    
-    /* Borde izquierda-derecha de la toolbar */
-
-    :root:not([chromehidden~="toolbar"],[sizemode="fullscreen"]) #nav-bar {
-        border-radius: 0px !important;
-        margin-inline-start: calc(var(--padding-right-tab) + 0px) !important;
-        margin-inline-end: 0px !important;
-        margin-bottom: 0px !important;
-    }
-    
-
-    /* Posición y estilo de la barra lateral izquierda de marcadores */
-
-    :root:not([chromehidden~="toolbar"]) #PersonalToolbar {
-        --toolbarbutton-active-background: var(--general-color) !important;
-        --padding-top-right-sidebar: 46px !important;
-        --padding-bottom-right-sidebar: 8px !important;
-        --height-right-sidebar: calc(100vh - 0px) !important;
-        height: var(--height-right-sidebar) !important;
-        max-height: var(--height-right-sidebar) !important;
-        /*background-color: var(--toolbar-bgcolor) !important;*/
-        background-color: #1B1D1C !important;
-        top: 0px !important;
-        bottom: 0px !important;
-        padding-top: var(--padding-top-right-sidebar) !important;
-        padding-bottom: var(--padding-bottom-right-sidebar) !important;
-        z-index: 1 !important;
-    }
-    
-
-    
-    /* --------------------------------- Zoom on :hover items ------------------------------------ */
-
-    #PersonalToolbar .toolbarbutton-1,
-    #PersonalToolbar .toolbarbutton-1 .toolbarbutton-icon:not(.toolbarbutton-1>image), /* Extensiones */
-    #PersonalToolbar #PlacesToolbarItems>.bookmark-item>.toolbarbutton-icon,
-    #PersonalToolbar #OtherBookmarks>.toolbarbutton-icon{
-        transform: scale(1.0) !important;
-        transition: ease-in-out 200ms !important;
-        border:50px !important;
-    }
-
-    #PersonalToolbar #PlacesToolbarItems>.bookmark-item:is(:hover,[open])>.toolbarbutton-icon,           /* Marcadores */
-    #PersonalToolbar .toolbarbutton-1:is(:hover,[open]) .toolbarbutton-icon:not(.toolbarbutton-1>image), /* Extensiones */
-    #PersonalToolbar .toolbarbutton-1:is(:hover,[open])>image,                                           /* demás iconos */
-    #PersonalToolbar #OtherBookmarks:not(bookmark-item):is(:hover,[open])>.toolbarbutton-icon{                              /* Other bookmarks button */
-        transform: scale(1.10) !important;
-        transition:  200ms !important;
-        border-radius: 50% !important;
-        background-color: #1B1D1C40 !important;
-    }
-    
-    /* Color y tamaño Items de la barra lateral - not extensions */
-
-    #PersonalToolbar .toolbarbutton-1{
-       --toolbarbutton-inner-padding: 6px !important;
-       --toolbarbutton-outer-padding: 0 4px !important;
-    }
-
-
-    /* Separador usando "espacio flexible" */
-
-    #PersonalToolbar toolbarpaletteitem[place="toolbar"][id^="wrapper-customizableui-special-spring"], #PersonalToolbar toolbarspring {
-        max-width: var(--uc-vertical-toolbar-width) !important;
-        min-height: 60px !important;
-        max-height: 110px !important;
-    }
-    
-    /* Iconos de Marcadores - corrección de tamaño y color de background */
-    
-    #PersonalToolbar #PlacesToolbarItems>.bookmark-item:not(:hover)>.toolbarbutton-icon,
-    #PersonalToolbar #PlacesToolbarItems>.bookmark-item:not(.subviewbutton, [disabled="true"]):hover,
-    #PersonalToolbar #PlacesToolbarItems>.bookmark-item>.toolbarbutton-icon,
-    #PersonalToolbar #PlacesToolbarItems>.bookmark-item:not(.subviewbutton, [disabled="true"]){
-        background-color: transparent !important;
-    }
-
-    #PersonalToolbar #PlacesToolbarItems > .bookmark-item>.toolbarbutton-icon{
-        margin-block-start: 10px !important;
-        height: 28px !important;
-        width: 28px !important;
-        padding: 6px !important;
-        background-color: var(--toolbarbutton-hover-background) !important;
-        border-radius: var(--toolbarbutton-border-radius) !important;
-    }
