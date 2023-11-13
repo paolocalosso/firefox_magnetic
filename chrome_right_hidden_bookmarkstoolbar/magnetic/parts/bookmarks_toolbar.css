@@ -23,18 +23,6 @@
   width: 28px !important;
 }
 
-/* fix overflow menu*/
-#unified-extensions-view {--uei-icon-size: 16px;}
-.unified-extensions-item-menu-button.subviewbutton {padding: 2px !important;}
-.unified-extensions-item-message-deck {display: none, align-items: right !important; justify-content: right !important;}
-#unified-extensions-view > vbox > vbox > .unified-extensions-item {padding-block: 0px !important;}
-.unified-extensions-item-menu-button{margin-inline-end: 0 !important;}
-.unified-extensions-list .unified-extensions-item-menu-button {margin-inline-end: 8px !important;}
-.unified-extensions-item-menu-button.subviewbutton {display: none !important; align-items: right !important; justify-content: right !important;}
-.unified-extensions-item-action-button[disabled] {display: none !important; align-items: right !important; justify-content: right !important;}
-head > link[href="chrome://browser/skin/addons/unified-extensions-item.css"] {unified-extensions-panel .unified-extensions-item {margin-block: 0px !important;}}
-#unified-extensions-panel .unified-extensions-item {margin-block: 0px !important;}
-
 /*hide unsorted bookmarks*/
 #menu_unsortedBookmarks {
     display: none !important;

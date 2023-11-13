@@ -9,6 +9,7 @@
 @import "customChrome.css";
 @import "magnetic/parts/tabcenter.css";
 @import "magnetic/parts/bookmarks_toolbar.css";
+@import "magnetic/parts/extensions-menu.css";
 /*@import "magnetic/parts/bali.css" */
 
 /*.menupopup-arrowscrollbox *{
