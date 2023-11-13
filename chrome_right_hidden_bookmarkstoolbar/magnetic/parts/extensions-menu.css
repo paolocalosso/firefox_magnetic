@@ -76,10 +76,10 @@
 #unified-extensions-view > vbox > vbox > .unified-extensions-item{
   padding-block: 0px !important;
 }
-/*#unified-extensions-panel .unified-extensions-item{
+#unified-extensions-panel .unified-extensions-item{
   margin-block: 0 !important;
   width: 100%; !important; 
-}*/
+}
 #unified-extensions-panel .unified-extensions-item-contents  {
     margin: auto !important;
 }
