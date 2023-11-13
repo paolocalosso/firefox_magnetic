@@ -66,8 +66,8 @@ head > link[href="chrome://browser/skin/addons/unified-extensions-item.css"] {un
     /* These create a empty area to the bottom of the toolbar, which is to mask a fact that we don't know exactly how high the toolbar should be */
     height: 100vh;
     max-height: 100vh !important; 
-    padding-bottom: 15% !important;
-    padding-top: 15% !important;
+    /*padding-bottom: 15% !important;*/
+    /*padding-top: 15% !important;*/
     padding-inline: 0px !important;
     background-color: #83A598 /*#E7E9CE*/!important;
   }
@@ -112,7 +112,7 @@ head > link[href="chrome://browser/skin/addons/unified-extensions-item.css"] {un
   transform: scaleX(0.2);
   transform-origin: right;
   opacity: 0;
-  width: 180px !important;
+  width: 250px /*180px*/ !important;
   }
   #PersonalToolbar:hover{
   opacity: 1;
@@ -143,7 +143,7 @@ head > link[href="chrome://browser/skin/addons/unified-extensions-item.css"] {un
   #personal-bookmarks .bookmark-item{
     margin: 5px 5px /*5px 12px*/ !important;
     min-height: 34px !important;
-    min-width: 170px !important;
+    min-width: 240px /*170px*/ !important;
     }
   #personal-bookmarks .bookmark-item:hover{
     background-color: #1B1C1D !important;
