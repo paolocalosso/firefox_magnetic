@@ -53,7 +53,7 @@
     /*padding-bottom: 15% !important;*/
     /*padding-top: 15% !important;*/
     padding-inline: 0px !important;
-    background-color: #83A598 /*#E7E9CE*/!important;
+    background-color: #1B1D1C/*#83A598*/ /*#E7E9CE*/!important;
   }
     
   #PersonalToolbar .toolbarbutton-1{
@@ -131,7 +131,7 @@
     min-width: 240px /*170px*/ !important;
     }
   #personal-bookmarks .bookmark-item:hover{
-    background-color: #1B1C1D !important;
+    background-color: #83A598 !important;
     }
   #personal-bookmarks .bookmark-item>.toolbarbutton-text, #import-button>.toolbarbutton-text {
     margin-left: 5px !important;
