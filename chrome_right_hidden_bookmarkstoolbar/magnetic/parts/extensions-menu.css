@@ -111,10 +111,10 @@
   width: unset !important;
 }*/
 #unified-extensions-panel #unified-extensions-view {
-    width: 750px !important;
+    width: 800px !important;
 }
 #unified-extensions-button {
-list-style-image: url("../icons/view-more-horizontal-symbolic-white.svg") !important;
+list-style-image: url("../icons/save-to-pocket-light.svg") !important;
 }
 .panel-subview-footer-button {
   text-align-last: center !important;
