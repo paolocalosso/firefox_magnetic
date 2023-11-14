@@ -49,6 +49,7 @@
 */
 
 /*compact addons menu*/
+/*
 #unified-extensions-panel #unified-extensions-view {
     width: 400px !important;
 }
@@ -101,13 +102,16 @@
 .unified-extensions-item-action-button[disabled] > .unified-extensions-item-icon{
   display: none;
 }
-*/
+
 
 
 /*columns addons menu*/
 /*
 #unified-extensions-view {
   width: unset !important;
+}*/
+#unified-extensions-panel #unified-extensions-view {
+    width: 750px !important;
 }
 #overflowed-extensions-list,
 #unified-extensions-area,
@@ -138,11 +142,19 @@
 #unified-extensions-panel .toolbarbutton-icon,
 .unified-extensions-item-icon
 {
-  --uei-icon-size: 12px;
+  --uei-icon-size: 16px;
 }
-#unified-extensions-panel .subviewbutton {
+/*#unified-extensions-panel .subviewbutton {
   padding: 2px !important;
+}*/
+.unified-extensions-item-menu-button.subviewbutton{
+  list-style-image: url("chrome://global/skin/icons/more.svg") !important;
+  padding: 0px !important;
+  margin-inline-end: 0 !important;
 }
+/*.unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon{
+  padding: 2px !important;
+}*/
 #unified-extensions-view > vbox > vbox > .unified-extensions-item {
   padding-block: 0px !important;
   margin-block: 0px !important;
@@ -154,16 +166,28 @@
   padding: 0 !important;
 }
 .unified-extensions-list .unified-extensions-item-menu-button {
-  margin-inline-end: 8px !important;
+  margin-inline-end:0px !important;
 }
 .unified-extensions-item-contents {
   line-height: 1 !important;
   white-space: nowrap !important;
+  margin: auto !important;
+  left: 0px;
+  margin-left: 0px !important;
 }
 .unified-extensions-item-name {
-  font-size: 80% !important; }
+  position: relative;
+  font-size: 90% !important;
+  left: 0px !important;
+  margin-left: 5px !important; }
 .unified-extensions-item-message {
-  font-size: 75% !important; }
+  font-size: 75% !important;
+  left: 0px !important;
+  margin-left: 5px !important; }
+.unified-extensions-item-icon {
+  position: absolute !important;
+  left: 0px !important;
+  margin-left: 15px !important; }
 #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton:not(:hover)
 {
   opacity: 0.2 !important;
@@ -185,8 +209,19 @@
 /*
 #unified-extensions-panel
   :where(toolbaritem,unified-extensions-item)
-  .unified-extensions-item-action-button[disabled]
-{ }
+  .unified-extensions-item-action-button[disabled] {
+    position: relative !important;
+    left: 0px !important;
+    margin-left: 0px !important;
+  }
+#unified-extensions-panel
+  :where(toolbaritem,unified-extensions-item)
+  .unified-extensions-item-contents[disabled] {
+    position: relative !important;
+    left: 0px !important;
+    margin-left: 0px !important;
+  }
+
 /**/
 /* to hide the gear icons */
 /*
