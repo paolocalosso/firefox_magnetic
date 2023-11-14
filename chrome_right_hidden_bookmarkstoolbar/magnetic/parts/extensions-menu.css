@@ -113,6 +113,12 @@
 #unified-extensions-panel #unified-extensions-view {
     width: 750px !important;
 }
+#unified-extensions-button {
+list-style-image: url("../icons/view-more-horizontal-symbolic-white.svg") !important;
+}
+.panel-subview-footer-button {
+  text-align-last: center !important;
+}
 #overflowed-extensions-list,
 #unified-extensions-area,
 .unified-extensions-list
@@ -169,7 +175,7 @@
   margin-inline-end:0px !important;
 }
 .unified-extensions-item-contents {
-  line-height: 1 !important;
+  /*line-height: 1 !important;*/
   white-space: nowrap !important;
   margin: auto !important;
   left: 0px;
@@ -177,11 +183,11 @@
 }
 .unified-extensions-item-name {
   position: relative;
-  font-size: 90% !important;
+  font-size: 100% !important;
   left: 0px !important;
   margin-left: 5px !important; }
 .unified-extensions-item-message {
-  font-size: 75% !important;
+  font-size: 90% !important;
   left: 0px !important;
   margin-left: 5px !important; }
 .unified-extensions-item-icon {

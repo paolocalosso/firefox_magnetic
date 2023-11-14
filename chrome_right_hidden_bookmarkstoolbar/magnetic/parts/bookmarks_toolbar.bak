@@ -96,13 +96,12 @@
   transform: scaleX(0.2);
   transform-origin: right;
   opacity: 0;
-  width: 20px /*180px*/ !important;
+  width: 250px /*180px*/ !important;
   }
   #PersonalToolbar:hover{
   opacity: 1;
   transform: scaleX(1);
   transition-delay: 230ms,220ms !important;
-  width: 250px /*180px*/ !important;
   }
   
   #browser,
