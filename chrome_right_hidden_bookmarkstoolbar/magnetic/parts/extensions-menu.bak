@@ -114,7 +114,7 @@
     width: 800px !important;
 }
 #unified-extensions-button {
-  list-style-image: url("../icons/save-to-pocket-light.svg") !important;
+list-style-image: url("../icons/save-to-pocket-light.svg") !important;
 }
 .panel-subview-footer-button {
   text-align-last: center !important;
@@ -136,13 +136,13 @@
 #unified-extensions-panel #unified-extensions-view,
 #unified-extensions-manage-extensions
 {
-  margin-top: 5px !important;
+  margin-top: 4px !important;
 }
 #unified-extensions-panel vbox#overflowed-extensions-list:not(:empty),
 #unified-extensions-panel vbox#unified-extensions-area:not(:empty),
 #unified-extensions-panel vbox.unified-extensions-list:not(:empty)
 {
-  border-bottom: 1px solid #83A598 /*color-mix(in srgb, currentColor 40%, transparent)*/;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 40%, transparent);
 }
 #overflowed-extensions-list .toolbarbutton-icon,
 #unified-extensions-panel .toolbarbutton-icon,
@@ -158,12 +158,12 @@
   padding: 0px !important;
   margin-inline-end: 0 !important;
 }
-.unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon{
+/*.unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon{
   padding: 2px !important;
-}
+}*/
 #unified-extensions-view > vbox > vbox > .unified-extensions-item {
   padding-block: 0px !important;
-  margin-block: 5px !important;*/
+  margin-block: 0px !important;
 }
 #unified-extensions-view .unified-extensions-item-menu-button {
   margin-inline-end: 0 !important;
@@ -176,21 +176,24 @@
 }
 .unified-extensions-item-contents {
   /*line-height: 1 !important;*/
-  /*white-space: nowrap !important;*/
+  white-space: nowrap !important;
   margin: auto !important;
+  left: 0px;
   margin-left: 0px !important;
 }
 .unified-extensions-item-name {
   position: relative;
   font-size: 100% !important;
-  /*margin-left: 5px !important;*/ }
+  left: 0px !important;
+  margin-left: 5px !important; }
 .unified-extensions-item-message {
   font-size: 90% !important;
-  /*margin-left: 5px !important;*/ }
-.unified-extensions-item-icon {
-  /*position: absolute !important;
   left: 0px !important;
-  margin-left: 15px !important; */}
+  margin-left: 5px !important; }
+.unified-extensions-item-icon {
+  position: absolute !important;
+  left: 0px !important;
+  margin-left: 15px !important; }
 #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton:not(:hover)
 {
   opacity: 0.2 !important;
@@ -198,7 +201,7 @@
 #unified-extensions-panel
   :where(toolbaritem,unified-extensions-item)[attention]
   .unified-extensions-item-action-button
-/*{
+{
   box-shadow:
     1px 1px var(--uei-button-attention-dot-color) inset,
     -1px -1px var(--uei-button-attention-dot-color) inset !important;
@@ -213,8 +216,18 @@
 #unified-extensions-panel
   :where(toolbaritem,unified-extensions-item)
   .unified-extensions-item-action-button[disabled] {
-    
+    position: relative !important;
+    left: 0px !important;
+    margin-left: 0px !important;
   }
+#unified-extensions-panel
+  :where(toolbaritem,unified-extensions-item)
+  .unified-extensions-item-contents[disabled] {
+    position: relative !important;
+    left: 0px !important;
+    margin-left: 0px !important;
+  }
+
 /**/
 /* to hide the gear icons */
 /*
