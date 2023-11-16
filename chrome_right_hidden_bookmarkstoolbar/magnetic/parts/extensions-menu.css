@@ -136,7 +136,7 @@
 #unified-extensions-panel #unified-extensions-view,
 #unified-extensions-manage-extensions
 {
-  margin-top: 5px !important;
+  margin-top: 0px !important;
 }
 #unified-extensions-panel vbox#overflowed-extensions-list:not(:empty),
 #unified-extensions-panel vbox#unified-extensions-area:not(:empty),
@@ -163,7 +163,7 @@
 }
 #unified-extensions-view > vbox > vbox > .unified-extensions-item {
   padding-block: 0px !important;
-  margin-block: 5px !important;*/
+  margin-block: 0px !important;
 }
 #unified-extensions-view .unified-extensions-item-menu-button {
   margin-inline-end: 0 !important;
