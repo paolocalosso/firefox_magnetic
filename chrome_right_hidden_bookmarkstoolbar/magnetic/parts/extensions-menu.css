@@ -118,6 +118,10 @@
 }
 .panel-subview-footer-button {
   text-align-last: center !important;
+  position: relative !important;
+  width: 150px !important;
+  left: 50% !important; 
+  transform: translateX(-50%) !important;
 }
 #overflowed-extensions-list,
 #unified-extensions-area,
