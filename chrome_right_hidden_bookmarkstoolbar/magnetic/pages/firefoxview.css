@@ -55,3 +55,31 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+
+
+button {
+  border: 1px solid var(--in-content-primary-button-border-color);
+  border-radius:50px !important;
+  color: #E7E9CE !important;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  button[selected] {
+    background-color: #83A598 !important;
+    color: #1B1D1C !important;
+  }
+}
+
+.category-icon {
+  background-color: initial;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  -moz-context-properties: fill;
+  fill: #E7E9CE !important;
+}
+
