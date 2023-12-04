@@ -56,12 +56,10 @@ body {
   justify-content: center;
 }
 
-
-
 button {
   border: 1px solid var(--in-content-primary-button-border-color);
   border-radius:50px !important;
-  color: #E7E9CE !important;
+  /*color: #E7E9CE !important;*/
 }
 
 
@@ -80,6 +78,5 @@ button {
   height: 20px;
   width: 20px;
   -moz-context-properties: fill;
-  fill: #E7E9CE !important;
+  /*fill: #E7E9CE !important;*/
 }
-
