@@ -58,7 +58,7 @@ body {
 
 button {
   border: 1px solid var(--in-content-primary-button-border-color);
-  border-radius:50px !important;
+  /*border-radius:50px !important;*/
   /*color: #E7E9CE !important;*/
 }
 
