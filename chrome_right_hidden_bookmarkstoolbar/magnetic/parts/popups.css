@@ -33,6 +33,10 @@ menuitem[disabled="true"]:hover, menupopup menu[disabled="true"]:hover {
 	scroll-padding-right: 15px !important;
 }
 
+.menu-iconic-icon {
+  padding: 0 !important;
+}
+
 /* Adjust popovers position */
 panel[type=arrow] {
 	margin-top: 3px !important;
