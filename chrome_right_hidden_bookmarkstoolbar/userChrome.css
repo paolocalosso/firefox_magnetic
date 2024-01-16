@@ -24,3 +24,11 @@ menupopup > menuitem,
 menupopup > menu{
   min-width: 120px !important;
 }*/
+/*
+#navigator-toolbox:not(:hover) #nav-bar {
+    visibility: collapse !important;
+}
+#navigator-toolbox:not(:hover) {
+    border-bottom: none !important;
+}
+*/
