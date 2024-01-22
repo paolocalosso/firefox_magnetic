@@ -174,7 +174,7 @@
 
 :root[tabsintitlebar] #titlebar .titlebar-min:hover,
 :root[tabsintitlebar] #titlebar #titlebar-min:hover {
-	background: #282828 !important;
+	background: #83A598 !important;
 	/*transform: scale(1.5) !important;*/
 	padding: 2px !important;
 	margin: 0 4px !important;
@@ -185,7 +185,7 @@
 :root[tabsintitlebar] #titlebar .titlebar-restore:hover,
 :root[tabsintitlebar] #titlebar .titlebar-max:hover,
 :root[tabsintitlebar] #titlebar #titlebar-max:hover {
-	background: #282828 !important;
+	background: #83A598 !important;
 	/*transform: scale(1.5) !important;*/
 	padding: 2px !important;
 	margin: 0 4px !important;
