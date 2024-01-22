@@ -202,6 +202,16 @@
 	height: 22px !important;
 }
 
+
+/*autohide window controls*/
+/*
+.titlebar-restore, .titlebar-max, .titlebar-close {
+  visibility: collapse;
+  transition: visibility 0s linear 10ms; 
+}
+.titlebar-buttonbox-container:hover .titlebar-button { visibility: visible }
+*/
+
 /*
 :root[tabsintitlebar] #titlebar .titlebar-min:active,
 :root[tabsintitlebar] #titlebar #titlebar-min:active {
@@ -226,6 +236,8 @@
 	color: transparent !important;
 }
 */
+
+
 
 
 :root[tabsintitlebar] #titlebar .titlebar-close:hover .toolbarbutton-icon,
