@@ -50,3 +50,5 @@ menupopup > menu{
 .titlebar-close {
   -moz-default-appearance: -moz-window-button-close !important;
 }
+
+:root[tabsintitlebar] #titlebar:-moz-window-inactive { opacity: 100 !important; }
