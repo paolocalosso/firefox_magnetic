@@ -93,6 +93,7 @@
 /* Remove default style of titlebar */
 :root[tabsintitlebar] #titlebar {
 	-moz-appearance: none !important;
+	z-index: 101 !important;
 }
 
 /* Fix the issue when dragging tabs */
@@ -105,7 +106,7 @@
 :root[tabsintitlebar] #titlebar-buttonbox-container,
 :root[tabsintitlebar][inFullscreen] #window-controls {
 	-moz-appearance: none !important;
-	padding: 0px 10px 6px 0;
+	padding: 8px 10px 6px 0;
 	position: absolute !important;
 	right: 0;
 	top: 0;

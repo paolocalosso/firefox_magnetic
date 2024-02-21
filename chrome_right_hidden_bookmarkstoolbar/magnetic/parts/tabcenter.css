@@ -63,7 +63,7 @@
         --uc-win-ctrl-btn-width: 38px;
         --uc-win-ctrl-padding: 12px;
         /* vertical offset from the top of the window, calculation: (1/2 * (NAVBAR_HEIGHT - BUTTON_HEIGHT)) */
-        --uc-win-ctrl-vertical-offset: 8px;
+        --uc-win-ctrl-vertical-offset: 0px;
         /* extra window drag space */
         --uc-win-ctrl-drag-space: 20px;
     }
