@@ -3,7 +3,8 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 #sidebar-box, .sidebar-panel {
-	background: var(--gnome-sidebar-background) !important;
+	background: #1b1d1c !important;
+	/*background: var(--gnome-sidebar-background) !important;*/
 }
 #sidebar-box:-moz-window-inactive, .sidebar-panel:-moz-window-inactive {
 	background: var(--gnome-inactive-sidebar-background) !important;

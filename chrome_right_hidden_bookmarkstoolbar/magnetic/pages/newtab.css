@@ -2,8 +2,61 @@
 
 @-moz-document url("about:newtab"), url("about:home") {
     body {
-        --newtab-background-color: #83A598 /*#282828*/ /*var(--gnome-browser-before-load-background)*/ !important;
+        /*background: url("../walls/ubuntu-gruvbox.jpg") !important ; background-size: cover !important ;*/
+        --newtab-background-color: #282828 /*#83A598*/ /*#282828*/ /*var(--gnome-browser-before-load-background)*/ !important;
         --newtab-background-color-secondary: var(--gnome-menu-background) !important;
         --newtab-primary-action-background: var(--gnome-accent) !important;
     }
+    .personalize-button {
+        margin-top: 31px !important;
+        margin- right: 31px !important;
+        border-radius: 50px !important;
+        background-color: #1b1d1c !important;
+    }
+
+    .personalize-button:hover {
+        background-color: #83A598 !important;
+    }
+
+    .context-menu-button:hover {
+        /*display: none !important;*/
+        border-radius: 25px !important;
+        background-color: #83a598 !important;
+    }
+    .section-top-bar {
+        display: hidden !important;
+        margin-top: 75px !important;
+    }
+    .section-title {
+        display: none !important;
+    }
+    .ds-top-sites {
+        margin-top: 25px !important;
+    }
+    .tile {
+        border-radius: 50px !important;
+        background-color: #1b1d1c !important;
+        transition: transform .5s ease;
+    }
+    .tile:hover {
+        transform: scale(1.2) !important;
+        background-color: #83A598 !important;
+    }
+    .top-site-icon {
+        border-radius: 50% !important;
+    }
+    .top-site-outer:hover {
+        border-radius: 20px !important;
+        background-color: #282828 !important;
+    }
+    /*.rich-icon*/
+    /*.context-menu {
+        separator-color: rgba(255, 255, 255, .1);
+        border-radius: 25px !important;
+        background-color: rgba(27,29,28, .95);
+    }*/
+    /*.context-menu-item:hover {
+        border-radius: 50px !important;
+        background-color: #83A598 !important;
+    }*/
 }
